@@ -90,7 +90,7 @@ a {
     padding: 100px 5vw 70px;
 
     display: grid;
-    grid-template-columns: 0.9fr 1.1fr;
+    grid-template-columns: 1.1fr 1fr;
     gap: 7vw;
 
     align-items: center;
