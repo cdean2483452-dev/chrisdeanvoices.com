@@ -271,30 +271,35 @@ h1 {
 }
 
 .audio-placeholder {
-    display: flex;
+    .audio-track {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: 30px;
     align-items: center;
-    justify-content: space-between;
 
-    padding: 22px 25px;
+    padding: 22px 0;
 
-    background: rgba(255,255,255,0.45);
-
-    border: 1px solid var(--border);
+    border-top: 1px solid var(--border);
 }
 
-.audio-placeholder strong {
+.track-info strong {
     display: block;
     font-size: 17px;
     font-weight: 500;
 }
 
-.audio-placeholder span {
+.track-info span {
     display: block;
-
     margin-top: 4px;
 
     color: var(--muted);
     font-size: 12px;
+}
+
+.audio-track audio {
+    width: 330px;
+    height: 40px;
+}
 }
 
 .play-placeholder {
@@ -453,6 +458,14 @@ footer a {
     .voice-content h2 {
         margin-bottom: 15px;
     }
+   .audio-track {
+    grid-template-columns: 1fr;
+    gap: 15px;
+}
+
+.audio-track audio {
+    width: 100%;
+}
 
     .intro {
         margin-bottom: 50px;
