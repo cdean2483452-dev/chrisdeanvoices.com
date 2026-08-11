@@ -270,6 +270,17 @@ h1 {
     margin-bottom: 20px;
 }
 
+.audio-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 6vw;
+    margin-top: 50px;
+}
+
+.audio-category h3 {
+    margin-bottom: 10px;
+}
+
 .audio-placeholder {
     .audio-track {
     display: grid;
@@ -465,6 +476,11 @@ footer a {
 
 .audio-track audio {
     width: 100%;
+}
+
+.audio-grid {
+    grid-template-columns: 1fr;
+    gap: 50px;
 }
 
     .intro {
